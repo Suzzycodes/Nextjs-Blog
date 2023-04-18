@@ -1,5 +1,14 @@
 import '@/styles/globals.css'
+import Nav from '@/components/Nav';
+import Button from '@/components/Button';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+    <Nav></Nav>
+  <Component {...pageProps} />
+  </>
+  )
 }
+
+export default MyApp;
